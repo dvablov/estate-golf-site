@@ -85,7 +85,7 @@
       <p>While you are signed in, your player profile, rounds, scores, and related scorecard data are backed up to Estate Golf's backend (hosted on Supabase) and linked to your account so they can be restored on your devices. If you never sign in, this data stays on your device only.</p>
 
       <h2>Online Multiplayer Rooms</h2>
-      <p>If you host or join an online round, Estate Golf shares round setup, invite codes, player display names, and live scores through our backend with the players in that room. This data is used to run the shared scorecard for that round.</p>
+      <p>If you host or join an online round, Estate Golf uses backend room channels to relay room setup, invite codes, join requests, player display names, and encrypted scorecard updates. Approved room participants can read the shared scorecard for that round; the backend relays encrypted scorecard payloads after host approval.</p>
 
       <h2>Nearby Scorecard Sync</h2>
       <p>If you use Nearby multiplayer, Estate Golf may send round, player, and scorecard data directly to nearby players that you choose to connect with.</p>
@@ -112,7 +112,7 @@
       <p>You can also delete the app from your device to remove locally stored app data from that device.</p>
 
       <h2>Deleting Your Account</h2>
-      <p>If you signed in, you can delete your account at any time in the app: Profile &rarr; Edit Profile &rarr; Delete Account. This permanently removes your account and its backed-up data from Estate Golf servers. Rounds you played with other players remain in their round history with your name replaced by a neutral placeholder. Data stored locally on your device is kept until you delete it or the app.</p>
+      <p>If you signed in, you can delete your account at any time in the app: Profile &rarr; Edit Profile &rarr; Delete Account. This permanently removes your account and its backed-up data from Estate Golf servers, signs you out, and revokes Sign in with Apple authorization for Estate Golf. Shared rounds may remain in other players' own scorecard records with your linked backend participant label replaced by a neutral placeholder. Data stored locally on your device is kept until you delete it or the app.</p>
 
       <h2>Children</h2>
       <p>Estate Golf is not directed to children and does not knowingly collect personal information from children.</p>
